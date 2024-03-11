@@ -9,11 +9,11 @@ export  const Layout = ( {children} ) => {
         //let _nubmer = number
         setNumber(number + 1)
     }
-    // useEffect(() => {
-    //     return(() => {
-    //         alert('Component mount')
-    //     })
-    // }, [number])
+    useEffect(() => {
+        return(() => {
+            alert('Component mount')
+        })
+    }, [number])
 
     const textareaRef = useRef()
 
