@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { MyStore } from './store/Context';
+import { BrowserRouter } from 'react-router-dom';
 //import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -12,8 +13,10 @@ const customStoreValue = {
   email: '1@mail.ru'
 }
 root.render(
-  <MyStore.Provider value={customStoreValue}>
-    <App />
-  </MyStore.Provider>
+  //<MyStore.Provider value={customStoreValue}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  //</MyStore.Provider>
 );
 
